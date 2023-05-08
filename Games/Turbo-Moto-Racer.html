@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git"
+    />
+    <meta name="author" content="Saturn" />
+    <meta content="The Game Collection" property="og:title" />
+    <meta content="Best HTML game site!" property="og:description" />
+    <meta name="theme-color" content="#858385" />
+    <meta property="og:image" content="/tgclogo.png" />
+    <title>My Drive - Google Drive</title>
+    <link rel="stylesheet" href="/css/game.css" />
+    <link rel="icon" type="image/png" href="/tgclogo.png" />
+  </head>
+
+<!-- Google tag (gtag.js) -->
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB3H5R2GXY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CB3H5R2GXY');
+</script>
+
+  <body>
+    <div class="navbar">
+      <div class="navitems">
+        <iframe
+          src="/iframe/navbarlogo.index.html"
+          frameborder="0"
+          class="navlogo"
+        ></iframe>
+        <a href="/"><div class="navitem">Home</div></a>
+        <a href="/games"><div class="navitem" current>Games</div></a>
+        <a href="/events"><div class="navitem">Events</div></a>
+        <a href="/leaderboards"><div class="navitem">Leaderboards</div></a>
+        <a href="/extra"><div class="navitem">Extra</div></a>
+        <a href="/settings"><div class="navitem">Settings</div></a>
+        <a href="/credits"><div class="navitem">Credits</div></a>
+      </div>
+    </div>
+    <div class="tgcgame">
+      <div class="game">
+        <div class="gameiframe">
+          <iframe
+            id="gameframe"
+            allowfullscreen=""
+            allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write"
+            scrolling="no"
+            class="iframe"
+            sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads"
+            src="/tgc-assets/gamestorage/turbo-moto-racer/"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="gamebar">
+        <div class="gametext">
+          <img src="https://raw.githubusercontent.com/Glitchyeet/Images/main/turbomotorace.png" class="gameicon" />
+          <div class="margin">
+            <div class="flex">
+              <h1 class="titletext">Turbo Moto Racer</h1>
+            </div>
+            <span class="bytext">By Staple Technologies</span>
+          </div>
+        </div>
+
+        <button1 id="reloadbtn">
+          <img src="/images/reload.png" class="reloadbtn" border="0" />
+
+          <button1 onclick="openFullscreen();" type="fullscreen">
+            <img
+              src="/images/fullscreen.png"
+              class="fullscreenbtn"
+              border="0"
+            />
+
+            <script>
+              var elem = document.getElementById("gameframe");
+              function openFullscreen() {
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                  elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                  elem.msRequestFullscreen();
+                }
+              }
+
+              function reload() {
+                document.getElementById("gameframe").src += "";
+              }
+              reloadbtn.onclick = reload;
+            </script>
+          </button1></button1
+        >
+      </div>
+    </div>
+  </body>
+</html>
